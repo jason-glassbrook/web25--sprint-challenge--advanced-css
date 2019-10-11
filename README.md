@@ -56,13 +56,12 @@ Follow these steps to set up your project:
 - [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [x] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [x] Add your project manager as a reviewer on the pull-request
 - [x] Your project manager will count the project as complete by merging the branch back into master.
- 
 
 ### Preprocessor Setup
 
@@ -88,7 +87,7 @@ Your finished project must include all of the following requirements:
 6. `footer.less`
 7. `home-page.less`
 
-_You will know everything is working properly when you see the styles enabled for the provided content._  
+_You will know everything is working properly when you see the styles enabled for the provided content._
 
 ### Home Page - Desktop HTML & LESS
 
@@ -128,6 +127,6 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Introduce CSS animations to your site.
 
-* [ ] Create a fixed navigation and add some opacity to the background
+* [x] Create a fixed navigation and add some opacity to the background
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
