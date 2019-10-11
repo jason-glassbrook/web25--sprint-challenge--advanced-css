@@ -160,6 +160,28 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-bar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+.nav-bar .nav-area {
+  display: flex ;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.nav-bar .nav-area nav {
+  width: 500px;
+}
+.nav-bar .nav-area nav ul {
+  display: flex ;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
