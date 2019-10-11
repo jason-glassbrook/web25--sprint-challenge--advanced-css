@@ -4,7 +4,7 @@
 
 .home {
   & > * {
-    .ins-lr(1.5rem);
+    .ins-lr(15px);
   }
 
   .intro {
@@ -44,7 +44,7 @@
   }// .visit-planets
 
   .walk {
-    .flex-center();
+    .flex-space-between();
     width: 100%;
 
     margin-top: 60px;
@@ -52,17 +52,26 @@
     padding: 50px 60px;
 
     @media @is-phone {
+      .flex-center(@main-axis: column-reverse);
+      margin-top: 15px;
+      padding: 15px;
+    }
 
+    & > * {
+      width: 48%;
+
+      @media @is-phone {
+        width: 100%;
+        .end-outs-tb(15px); // because they're reversed :facepalm:
+      }
     }
 
     .walk-text {
-      width: 50%;
-
       .button {
         .my-button(@bg-color: @button-bg-color ; @fg-color: @button-fg-color);
 
         display: inline-block;
-        .outs-tb(25px);
+        .outs-tb(15px);
         .end-outs-tb(0);
 
         @media @is-phone {
@@ -73,9 +82,6 @@
     }// .walk-text
 
     .walk-img {
-      width: 46%;
-      margin-left: 4%;
-
       img {
         width: 100%;
         height: auto;

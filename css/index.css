@@ -259,8 +259,8 @@ footer {
   padding-bottom: 20px;
 }
 .home > * {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .home .intro {
   width: 100%;
@@ -299,16 +299,38 @@ footer {
 .home .walk {
   display: flex ;
   flex-flow: row nowrap;
-  justify-content: center;
-  align-content: center;
+  justify-content: space-between;
+  align-content: space-between;
   align-items: center;
   width: 100%;
   margin-top: 60px;
   border-top: 1px solid #DEE2E6;
   padding: 50px 60px;
 }
-.home .walk .walk-text {
-  width: 50%;
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex ;
+    flex-flow: column-reverse nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding: 15px;
+  }
+}
+.home .walk > * {
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .home .walk > * {
+    width: 100%;
+  }
+  .home .walk > *:first-child {
+    margin-top: 15px;
+  }
+  .home .walk > *:last-child {
+    margin-bottom: 15px;
+  }
 }
 .home .walk .walk-text .button {
   background-color: #22283A;
@@ -323,8 +345,8 @@ footer {
   border-radius: 5px;
   text-align: center;
   display: inline-block;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .home .walk .walk-text .button:hover {
   background-color: #353e5a;
@@ -343,10 +365,6 @@ footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-}
-.home .walk .walk-img {
-  width: 46%;
-  margin-left: 4%;
 }
 .home .walk .walk-img img {
   width: 100%;
