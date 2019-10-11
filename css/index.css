@@ -220,8 +220,8 @@ a:hover {
   align-content: center;
   align-items: center;
   max-width: 500px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -259,10 +259,10 @@ footer {
   padding-bottom: 20px;
 }
 .home > * {
-  padding-top: 15px;
-  padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .home > *:first-child {
   margin-top: 0;
