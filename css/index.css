@@ -132,9 +132,9 @@ table {
 html {
   font-size: 62.5%;
 }
-html,
 body {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
   color: #5E6164;
 }
 h1,
@@ -177,6 +177,10 @@ a:hover {
   width: 100%;
   position: sticky;
   top: 0;
+  background-color: #F6F6F6;
+  color: #454A59;
+  text-decoration: none;
+  border-bottom: 1px solid #F1F1F1;
 }
 .nav-bar .nav-area {
   display: flex ;
@@ -184,6 +188,9 @@ a:hover {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+.nav-bar .nav-area > * {
+  margin: 10px;
 }
 .nav-bar .nav-area nav {
   width: 500px;
