@@ -34,9 +34,17 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+  > Adaptive websites use multiple templates/layouts that are optimized for each media type.
+  > Responsive websites use a single template/layout that changes (ex: by reflowing) for each media type.
+
 2. Describe what it means to be mobile first vs desktop first.
 
+  > In mobile-first design, default styles are designed for mobile devices and special styles are created to accommodate desktop devices.
+  > In desktop-first design, default styles are design for desktop devices and special styles are created to accommodate mobile devices.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+  > Most browsers use `16px` as the default font size, so `html { font-size: 62.5% }` sets a page's default font size to `10px`. Using `10px` makes subsequent arithmetic with `rem`-based font sizes easier. Using units of `rem` for font sizes allows all text on the page to scale if the user/browser changes the default font size.
 
 4. How would you describe preprocessing to someone new to CSS?
 
