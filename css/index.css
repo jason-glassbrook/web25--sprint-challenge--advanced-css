@@ -203,10 +203,10 @@ a:hover {
   align-items: center;
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  color: #81848E;
+  background: #F6F6F6;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
+  border: 1px double #F1F1F1;
   border-radius: 10px;
   display: flex;
   justify-content: center;
