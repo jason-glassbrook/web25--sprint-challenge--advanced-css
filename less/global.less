@@ -4,10 +4,12 @@
 }
 
 html {
+  .size-w-100of();
   font-size: 62.5%;
 }
 
 body {
+  .size-w-100of();
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.6rem;
   color: @main-fg-color;
@@ -43,6 +45,11 @@ a {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
+
+  @media @is-phone {
+    max-width: @phone-width;
+    .ins-lr(5%);
+  }
 }
 

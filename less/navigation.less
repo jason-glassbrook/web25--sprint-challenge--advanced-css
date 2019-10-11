@@ -1,7 +1,7 @@
 // Navigation code here
 
 .nav-bar {
-  .size-w-100of();
+  width: 100%;
   position: sticky; // like fixed, but don't have to offset other content
   top: 0;
 
@@ -13,15 +13,18 @@
 
   .nav-area {
     .flex-center(@main-axis: column);
+    .outs-tb(1rem);
+    max-width: @phone-width;
 
     & > * {
-      margin: 10px;
+      .outs-tb(1rem);
+      .end-outs-tb(0);
     }
 
     nav {
-      width: @phone-width;
+      .size-w-100of();
       ul {
-        .flex-space-around(@main-axis: row);
+        .flex-space-between(@main-axis: row);
       }
     }
   }
