@@ -1,0 +1,32 @@
+///-------------------------------------
+/// sizing
+///-------------------------------------
+
+.size-h-100of() { height: 100%; }
+.size-w-100of() { width: 100%; }
+
+.size-hw(
+  @hw :auto ;
+  @h : @hw ; @w : @hw
+) {
+	height: @h;
+	width: @w;
+}
+
+.min-size-hw(
+  @hw : auto ;
+  @h : @hw ; @w : @hw
+) {
+	min-height: @h;
+	min-width: @w;
+}
+
+.max-size-hw(
+  @hw :auto ;
+  @h : @hw ; @w : @hw
+) {
+	max-height: @h;
+	max-width: @w;
+}
+
+///-------------------------------------

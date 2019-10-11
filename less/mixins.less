@@ -1,1 +1,49 @@
-// Mixins Here
+// Mixins in here
+
+@import './mixins-flex-box.less';
+@import './mixins-size.less';
+@import './mixins-outs.less';
+@import './mixins-ins.less';
+
+///-------------------------------------
+/// decor
+///-------------------------------------
+
+.default-decor(
+  @bg-color : do-not-change ;
+  @fg-color : inherit ;
+  @text-decor : none
+) {
+  background-color : @bg-color ;
+  color : @fg-color ;
+  text-decoration : @text-decor ;
+}
+
+.hover-decor(
+  @bg-color : do-not-change ;
+  @fg-color : inherit ;
+  @text-decor : underline
+) {
+  &:hover {
+    background-color : @bg-color ;
+    color : @fg-color ;
+    text-decoration : @text-decor ;
+  }
+}
+
+///-------------------------------------
+/// buttons
+///-------------------------------------
+
+.custom-button( @bg-color ; @fg-color ; @border-color ) {
+  .default-decor( @bg-color ; @fg-color );
+  .hover-decor( lighten(@bg-color, 10%) ; @fg-color );
+  .ins-tblr( 10px ) ;
+
+  cursor: pointer;
+  
+  border: 1px solid @border-color ;
+  border-radius: 10px;
+
+  text-align: center;
+}

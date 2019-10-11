@@ -1,0 +1,62 @@
+///-------------------------------------
+/// outs (margins)
+///-------------------------------------
+/// t = top
+/// b = bottom
+/// l = left
+/// r = right
+/// tb = top + bottom
+/// lr = left + right
+/// tblr = top + bottom + left + right
+///-------------------------------------
+
+.outs-tblr(
+  @tblr : auto ;
+  @tb : @tblr ;
+  @lr : @tblr ;
+  @t : @tb ; @b : @tb ;
+  @l : @lr ; @r : @lr
+) {
+  .outs-tb( @t ; @b );
+  .outs-lr( @l ; @r );
+}
+
+.outs-tb(
+  @tb : auto ;
+  @t : @tb ; @b : @tb
+) {
+  margin-top : @t ;
+  margin-bottom : @b ;
+}
+
+.outs-lr(
+  @lr : auto ;
+  @l : @lr ; @r : @lr
+) {
+  margin-left : @l ;
+  margin-right : @r ;
+}
+
+///-----------------
+/// end elements (first and last elements)
+///-----------------
+
+.end-outs-tb( @w : 0 ) {
+	&:first-child {
+		margin-top: @w;
+	}
+	&:last-child {
+		margin-bottom: @w;
+	}
+}
+
+.end-outs-lr( @w : 0 ) {
+	&:first-child {
+		margin-left: @w;
+	}
+	&:last-child {
+		margin-right: @w;
+	}
+}
+
+///-------------------------------------

@@ -1,0 +1,73 @@
+///-------------------------------------
+/// flex box
+///-------------------------------------
+/// generic
+///-----------------
+
+.flex-box(
+  @main-axis : row ;
+  @wrap-lines : nowrap ;
+  @align-lines-along-axis : space-between ;
+  @align-lines-across-axis : space-between ;
+  @align-items-across-line : stretch
+) {
+  display : flex ;
+  flex-flow : @main-axis @wrap-lines ;
+  justify-content : @align-lines-along-axis ;
+  align-content : @align-lines-across-axis ;
+  align-items : @align-items-across-line ;
+}
+
+///-----------------
+/// flex spacing
+///-----------------
+
+.flex-start-content(
+  @main-axis : row ;
+  @wrap-lines : nowrap ;
+  @align-items-across-line : stretch
+) {
+  .flex-box( @main-axis ; @wrap-lines ; flex-start ; flex-start ; @align-items-across-line )
+}
+
+.center-content(
+  @main-axis : row ;
+  @wrap-lines : nowrap ;
+  @align-items-across-line : stretch
+) {
+  .flex-box( @main-axis ; @wrap-lines ; center ; center ; @align-items-across-line )
+}
+
+.flex-end-content(
+  @main-axis : row ;
+  @wrap-lines : nowrap ;
+  @align-items-across-line : stretch
+) {
+  .flex-box( @main-axis ; @wrap-lines ; flex-end ; flex-end ; @align-items-across-line )
+}
+
+.space-around-content(
+  @main-axis : row ;
+  @wrap-lines : nowrap ;
+  @align-items-across-line : stretch
+) {
+  .flex-box( @main-axis ; @wrap-lines ; space-around ; space-around ; @align-items-across-line )
+}
+
+.space-between-content(
+  @main-axis : row ;
+  @wrap-lines : nowrap ;
+  @align-items-across-line : stretch
+) {
+  .flex-box( @main-axis ; @wrap-lines ; space-between ; space-between ; @align-items-across-line )
+}
+
+.space-evenly-content(
+  @main-axis : row ;
+  @wrap-lines : nowrap ;
+  @align-items-across-line : stretch
+) {
+  .flex-box( @main-axis ; @wrap-lines ; space-evenly ; space-evenly ; @align-items-across-line )
+}
+
+///-------------------------------------
