@@ -48,7 +48,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. How would you describe preprocessing to someone new to CSS?
 
+  > Preprocessing allows you to write CSS as if it has more features: variables (reusable values), mixins (reusable pieces of code), functions (ex: to lighten or darken colors). It also makes some of the syntax a little easier to understand, ex: by allowing you to nest selectors like you nest elements in HTML.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+  
+  > 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
