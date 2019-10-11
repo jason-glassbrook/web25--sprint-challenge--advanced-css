@@ -135,7 +135,7 @@ html {
 }
 body {
   width: 100%;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.6rem;
   color: #5E6164;
 }
@@ -144,8 +144,24 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #23293B;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child {
+  margin-top: 0;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child {
+  margin-bottom: 0;
 }
 h1 {
   font-size: 3.6rem;
@@ -159,6 +175,14 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p:first-child {
+  margin-top: 0;
+}
+p:last-child {
+  margin-bottom: 0;
 }
 a {
   background-color: none;
@@ -222,60 +246,71 @@ a:hover {
   align-items: center;
 }
 footer {
+  display: flex ;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   color: #81848E;
   background: #F6F6F6;
-  padding: 20px 0;
   border: 1px double #F1F1F1;
   border-radius: 10px 10px 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.home .intro {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .home .intro img {
   max-width: 100%;
   border-radius: 0 0 10px 10px;
 }
-.home .intro h2 {
-  padding: 15px;
-}
-.home .intro p {
-  padding: 0 15px;
-}
 .home .space-images {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex ;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   width: 100%;
 }
 .home .space-images img {
+  height: 100%;
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
-  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .home .space-images img:not(:first-of-type) {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
 }
-.home .visit-planets h3 {
-  margin-top: 11px;
-}
-.home .visit-planets p {
-  margin-top: 13px;
-}
 .home .walk {
+  display: flex ;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   margin-top: 60px;
   border-top: 1px solid #DEE2E6;
   padding: 50px 60px;
-  display: flex;
-  justify-content: center;
 }
 .home .walk .walk-text {
   width: 50%;
-}
-.home .walk .walk-text h3 {
-  margin-bottom: 10px;
-}
-.home .walk .walk-text p {
-  margin-bottom: 26px;
 }
 .home .walk .walk-text .button {
   background-color: #22283A;
@@ -290,15 +325,23 @@ footer {
   border-radius: 5px;
   text-align: center;
   display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .home .walk .walk-text .button:hover {
   background-color: #353e5a;
   color: white;
   text-decoration: underline;
 }
+.home .walk .walk-text .button:first-child {
+  margin-top: 0;
+}
+.home .walk .walk-text .button:last-child {
+  margin-bottom: 0;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .button {
-    display: block;
+    width: 100%;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
