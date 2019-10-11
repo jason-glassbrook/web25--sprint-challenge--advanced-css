@@ -1,9 +1,9 @@
 // Mixins in here
 
-@import './mixins-flex-box.less';
-@import './mixins-size.less';
-@import './mixins-outs.less';
-@import './mixins-ins.less';
+@import "./mixins-flex-box.less";
+@import "./mixins-size.less";
+@import "./mixins-outs.less";
+@import "./mixins-ins.less";
 
 ///-------------------------------------
 /// decor
@@ -14,9 +14,9 @@
   @fg-color : inherit ;
   @text-decor : none
 ) {
-  background-color : @bg-color ;
-  color : @fg-color ;
-  text-decoration : @text-decor ;
+  background-color: @bg-color;
+  color: @fg-color;
+  text-decoration: @text-decor;
 }
 
 .hover-decor(
@@ -25,9 +25,9 @@
   @text-decor : underline
 ) {
   &:hover {
-    background-color : @bg-color ;
-    color : @fg-color ;
-    text-decoration : @text-decor ;
+    background-color: @bg-color;
+    color: @fg-color;
+    text-decoration: @text-decor;
   }
 }
 
@@ -35,15 +35,16 @@
 /// buttons
 ///-------------------------------------
 
-.custom-button( @bg-color ; @fg-color ; @border-color ) {
-  .default-decor( @bg-color ; @fg-color );
-  .hover-decor( lighten(@bg-color, 10%) ; @fg-color );
-  .ins-tblr( 10px ) ;
+.my-button( @bg-color ; @fg-color ) {
+  .default-decor(@bg-color ; @fg-color);
+  .hover-decor(lighten(@bg-color, 10%) ; @fg-color);
+  .ins-tb(1.0rem);
+  .ins-lr(2.0rem);
 
   cursor: pointer;
-  
-  border: 1px solid @border-color ;
-  border-radius: 10px;
+
+  border: none;
+  border-radius: @radius-3;
 
   text-align: center;
 }

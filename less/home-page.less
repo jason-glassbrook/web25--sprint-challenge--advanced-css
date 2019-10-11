@@ -62,7 +62,18 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .button {
+        .my-button(
+          @bg-color : @button-bg-color ;
+          @fg-color : @button-fg-color
+        );
+
+        display: inline-block;
+
+        @media @is-phone {
+          display: block;
+          .ins-tb(2.0rem);
+        }
       }
     }
 

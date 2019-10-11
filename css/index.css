@@ -263,7 +263,7 @@ footer {
 }
 .home .walk {
   margin-top: 60px;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #DEE2E6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
@@ -276,6 +276,32 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .button {
+  background-color: #22283A;
+  color: white;
+  text-decoration: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+}
+.home .walk .walk-text .button:hover {
+  background-color: #353e5a;
+  color: white;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .button {
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
