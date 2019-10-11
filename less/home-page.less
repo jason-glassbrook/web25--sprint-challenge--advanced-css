@@ -3,12 +3,12 @@
 ///-------------------------------------
 
 .home {
-  .intro {
-    .ins-lr(15px);
+  & > * {
+    .ins-lr(1.5rem);
+  }
 
-    @media @is-phone {
-      .ins-lr(0);
-    }
+  .intro {
+    width: 100%;
     
     img {
       max-width: 100%;
@@ -40,15 +40,20 @@
   }// .space-images
 
   .visit-planets {
-    padding: 15px;
+    width: 100%;
   }// .visit-planets
 
   .walk {
     .flex-center();
+    width: 100%;
 
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
+
+    @media @is-phone {
+
+    }
 
     .walk-text {
       width: 50%;
