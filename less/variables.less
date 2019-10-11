@@ -1,6 +1,16 @@
 // Variables
 
-// Color pointers
+// sizes
+
+@phone-width : 500px;
+@is-phone : ~'(max-width: @{phone-width})';
+
+@radius-1 : 20px ;
+@radius-2 : 10px ;
+@radius-3 : 5px ;
+
+// colors of elements
+
 @nav-bg-color : @wild-sand;
 @nav-fg-color : @river-bend;
 @nav-border-color : @sea-shell;
@@ -13,7 +23,8 @@
 @footer-fg-color : @waterloo;
 @footer-border-color : @sea-shell;
 
-// Color Vars
+// colors
+
 @wild-sand : #F6F6F6;
 @river-bend : #454A59;
 @sea-shell : #F1F1F1;
@@ -23,8 +34,3 @@
 @waterloo : #81848E;
 @btn-bg-color : #22283A;
 @border-real : #dee2e6;
-
-// Mobile var
-
-@phone-width : 500px;
-@is-phone : ~'(max-width: @{phone-width})';
