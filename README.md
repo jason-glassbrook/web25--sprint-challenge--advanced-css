@@ -52,7 +52,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
   
-  > 
+  > My favorite concept so far is mixins &mdash; especially parametric mixins &mdash; because they allow me to reuse style that I use a lot. I think the concept that gives me the most trouble is cascading, which is obviously present in vanilla CSS; this is not because I don't understand it conceptually, but because I have difficulty with its unexpected consequences in practice.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
