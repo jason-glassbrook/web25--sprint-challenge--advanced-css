@@ -1,1 +1,36 @@
-// Navigation code here
+///-------------------------------------
+/// nav
+///-------------------------------------
+
+.nav-bar {
+  width: 100%;
+  position: sticky; // like fixed, but don't have to offset other content
+  top: 0;
+
+  .default-decor(
+    @bg-color : @nav-bg-color ;
+    @fg-color : @nav-fg-color
+    );
+  border-bottom: 1px solid @nav-border-color;
+
+  .nav-area {
+    .flex-center(@main-axis: column);
+    max-width: @phone-width;
+    .ins-tb(1rem);
+    .ins-lr(1.5rem);
+
+    & > * {
+      .outs-tb(1rem);
+      .end-outs-tb(0);
+    }
+
+    nav {
+      .size-w-100of();
+      ul {
+        .flex-space-between(@main-axis: row);
+      }// ul
+    }// nav
+  }// .nav-area
+}// .nav-bar
+
+///-------------------------------------

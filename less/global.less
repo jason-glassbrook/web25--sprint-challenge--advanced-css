@@ -1,20 +1,39 @@
-// General Styles
+///-------------------------------------
+/// global
+///-------------------------------------
+
 * {
   box-sizing: border-box;
 }
 
 html {
+  .size-w-100of();
   font-size: 62.5%;
 }
 
-html, body {
-  font-family: 'Ubuntu', sans-serif;
-  color: @main-font-color;
+body {
+  .size-w-100of();
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  color: @main-fg-color;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Russo One', sans-serif;
-  color: @header-font-color;
+///-------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  color: @header-fg-color;
+  
+  .outs-tb(1.2rem);
+  .end-outs-tb(0);
+}
+
+h1 {
+  font-size: 3.6rem;
 }
 
 h2 {
@@ -28,11 +47,26 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+
+  .outs-tb(1.2rem);
+  .end-outs-tb(0);
 }
+
+a {
+  .default-decor(@bg-color: none);
+  .hover-decor(@bg-color: none);
+}
+
+///-------------------------------------
 
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
+
+  @media @is-phone {
+    max-width: @phone-width;
+  }
 }
 
+///-------------------------------------

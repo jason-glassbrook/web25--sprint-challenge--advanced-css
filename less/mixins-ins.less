@@ -1,0 +1,40 @@
+///-------------------------------------
+/// ins (padding)
+///-------------------------------------
+/// t = top
+/// b = bottom
+/// l = left
+/// r = right
+/// tb = top + bottom
+/// lr = left + right
+/// tblr = top + bottom + left + right
+///-------------------------------------
+
+.ins-tblr(
+  @tblr : auto ;
+  @tb : @tblr ;
+  @lr : @tblr ;
+  @t : @tb ; @b : @tb ;
+  @l : @lr ; @r : @lr
+) {
+  .ins-tb( @t ; @b );
+  .ins-lr( @l ; @r );
+}
+
+.ins-tb(
+  @tb : auto ;
+  @t : @tb ; @b : @tb
+) {
+  padding-top : @t ;
+  padding-bottom : @b ;
+}
+
+.ins-lr(
+  @lr : auto ;
+  @l : @lr ; @r : @lr
+) {
+  padding-left : @l ;
+  padding-right : @r ;
+}
+
+///-------------------------------------

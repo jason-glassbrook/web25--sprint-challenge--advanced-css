@@ -1,11 +1,16 @@
-// Footer Styles
+///-------------------------------------
+/// footer
+///-------------------------------------
+
 footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .flex-center();
+
+  color: @footer-fg-color;
+  background: @footer-bg-color;
+
+  border: 1px double @footer-border-color;
+  border-radius: @radius-2 @radius-2 0 0;
+  .ins-tb(20px);
+}// footer
+
+///-------------------------------------
